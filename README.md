@@ -110,35 +110,6 @@ Users can:
 
 ---
 
-# ⚙️ Installation & Setup
-
-## 1️⃣ Clone the Repository
-
-```
-git clone https://github.com/your-username/careerai.git
-```
-
----
-
-## 2️⃣ Install Frontend Dependencies
-
-```
-cd frontend
-npm install
-```
-
----
-
-## 3️⃣ Install Backend Dependencies
-
-```
-cd backend
-npm install
-
-```
-
----
-
 # 🔑 Environment Variables
 
 Create a `.env` file inside the backend folder and add:
@@ -157,24 +128,6 @@ GEMINI_API_KEY=YOUR_API_KEY
 
 RAZORPAY_API_KEY=YOUR_API_KEY
 RAZORPAY_KEY_SECRET=YOUR_KEY_SECRET
-```
-
----
-
-# ▶️ Run the Application
-
-## Start Backend
-
-```
-cd backend
-npm run dev
-```
-
-## Start Frontend
-
-```
-cd frontend
-npm run dev
 ```
 
 ---
