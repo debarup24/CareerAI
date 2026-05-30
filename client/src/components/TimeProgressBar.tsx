@@ -44,7 +44,7 @@ export default function TimeProgressBar() {
         )}
         {seconds >= TOTAL_TIME - 16 && (
           <p className="mt-3 px-3 text-white/40 text-sm tracking-widest uppercase animate-pulse">
-            Connecting the Server...Application Loading..
+            Connecting the Server...
           </p>
         )}
         {seconds >= TOTAL_TIME - 10 && (
