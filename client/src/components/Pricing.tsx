@@ -146,6 +146,15 @@ function PlanCTA({
     razorpay.open();
   };
 
+  const handleSubscribeButtonClick = () => {
+    if (!isAuth) {
+      navigate("/login");
+      return;
+    }
+
+    handleSubscribe(plan.price);
+  };
+
   return (
     <button
       className={`mt-auto text-center text-sm font-semibold py-3 rounded-xl transition-all duration-200 ${
@@ -153,7 +162,7 @@ function PlanCTA({
           ? "btn-primary"
           : "bg-white/6 hover:bg-white/10 boder border-white/10 text-white"
       }`}
-      onClick={() => handleSubscribe(plan.price)}
+      onClick={handleSubscribeButtonClick}
       disabled={loading}
     >
       {loading ? "Please Wait..." : plan.cta}
